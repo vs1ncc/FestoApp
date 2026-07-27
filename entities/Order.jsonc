@@ -1,0 +1,82 @@
+{
+  "name": "Order",
+  "type": "object",
+  "properties": {
+    "order_number": {
+      "type": "string",
+      "title": "\u041d\u043e\u043c\u0435\u0440 \u0437\u0430\u043a\u0430\u0437\u0430"
+    },
+    "order_name": {
+      "type": "string",
+      "title": "\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0437\u0430\u043a\u0430\u0437\u0430"
+    },
+    "characteristics": {
+      "type": "string",
+      "title": "\u0425\u0430\u0440\u0430\u043a\u0442\u0435\u0440\u0438\u0441\u0442\u0438\u043a\u0438",
+      "maxLength": 1500
+    },
+    "price": {
+      "type": "number",
+      "title": "\u0426\u0435\u043d\u0430"
+    },
+    "size": {
+      "type": "string",
+      "title": "\u0420\u0430\u0437\u043c\u0435\u0440"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "\u0414\u0430\u0442\u0430"
+    },
+    "client_name": {
+      "type": "string",
+      "title": "\u0424\u0418\u041e \u043a\u043b\u0438\u0435\u043d\u0442\u0430"
+    },
+    "client_phone": {
+      "type": "string",
+      "title": "\u041d\u043e\u043c\u0435\u0440 \u0442\u0435\u043b\u0435\u0444\u043e\u043d\u0430 \u043a\u043b\u0438\u0435\u043d\u0442\u0430"
+    },
+    "delivery_date": {
+      "type": "string",
+      "format": "date",
+      "title": "\u0414\u0430\u0442\u0430 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0438"
+    },
+    "client_address": {
+      "type": "string",
+      "title": "\u0410\u0434\u0440\u0435\u0441 \u043a\u043b\u0438\u0435\u043d\u0442\u0430"
+    },
+    "photo_url": {
+      "type": "string",
+      "title": "\u0424\u043e\u0442\u043e\u0433\u0440\u0430\u0444\u0438\u044f"
+    },
+    "status": {
+      "type": "string",
+      "title": "\u0421\u0442\u0430\u0442\u0443\u0441 \u0437\u0430\u043a\u0430\u0437\u0430",
+      "enum": [
+        "\u0437\u0430\u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0430 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430",
+        "\u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u0432 \u043f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e",
+        "\u0433\u043e\u0442\u043e\u0432\u043e",
+        "\u043e\u0442\u043f\u0440\u0430\u0432\u043b\u0435\u043d\u043e \u0432 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0443",
+        "\u0434\u043e\u0441\u0442\u0430\u0432\u043b\u0435\u043d\u043e"
+      ],
+      "default": "\u0437\u0430\u043f\u043b\u0430\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u0430 \u0434\u043e\u0441\u0442\u0430\u0432\u043a\u0430"
+    },
+    "production_id": {
+      "type": "string",
+      "title": "\u041f\u0440\u043e\u0438\u0437\u0432\u043e\u0434\u0441\u0442\u0432\u043e"
+    },
+    "contract_url": {
+      "type": "string",
+      "title": "\u0414\u043e\u0433\u043e\u0432\u043e\u0440"
+    },
+    "order_file_url": {
+      "type": "string",
+      "title": "\u0417\u0430\u043a\u0430\u0437"
+    }
+  },
+  "required": [
+    "order_number",
+    "order_name",
+    "price"
+  ]
+}

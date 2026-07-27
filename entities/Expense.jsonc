@@ -1,0 +1,32 @@
+{
+  "name": "Expense",
+  "type": "object",
+  "properties": {
+    "operation_type": {
+      "type": "string",
+      "title": "\u0422\u0438\u043f \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0438"
+    },
+    "operation_name": {
+      "type": "string",
+      "title": "\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0438"
+    },
+    "amount": {
+      "type": "number",
+      "title": "\u0421\u0443\u043c\u043c\u0430"
+    },
+    "category": {
+      "type": "string",
+      "title": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "\u0414\u0430\u0442\u0430"
+    }
+  },
+  "required": [
+    "operation_type",
+    "operation_name",
+    "amount"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Setting",
+  "type": "object",
+  "properties": {
+    "key": {
+      "type": "string",
+      "title": "\u041a\u043b\u044e\u0447"
+    },
+    "value": {
+      "type": "string",
+      "title": "\u0417\u043d\u0430\u0447\u0435\u043d\u0438\u0435"
+    }
+  },
+  "required": [
+    "key",
+    "value"
+  ]
+}

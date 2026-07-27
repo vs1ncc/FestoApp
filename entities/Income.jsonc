@@ -1,0 +1,47 @@
+{
+  "name": "Income",
+  "type": "object",
+  "properties": {
+    "client_name": {
+      "type": "string",
+      "title": "\u0424\u0418\u041e \u0437\u0430\u043a\u0430\u0437\u0447\u0438\u043a\u0430"
+    },
+    "amount": {
+      "type": "number",
+      "title": "\u0421\u0443\u043c\u043c\u0430"
+    },
+    "order_name": {
+      "type": "string",
+      "title": "\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u0437\u0430\u043a\u0430\u0437\u0430"
+    },
+    "operation_name": {
+      "type": "string",
+      "title": "\u041d\u0430\u0438\u043c\u0435\u043d\u043e\u0432\u0430\u043d\u0438\u0435 \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0438"
+    },
+    "debt": {
+      "type": "number",
+      "title": "\u0414\u043e\u043b\u0433 \u043f\u043e \u043e\u043f\u0435\u0440\u0430\u0446\u0438\u0438",
+      "default": 0
+    },
+    "debt_return_date": {
+      "type": "string",
+      "format": "date",
+      "title": "\u0414\u0430\u0442\u0430 \u0432\u043e\u0437\u0432\u0440\u0430\u0442\u0430 \u0434\u043e\u043b\u0433\u0430"
+    },
+    "category": {
+      "type": "string",
+      "title": "\u041a\u0430\u0442\u0435\u0433\u043e\u0440\u0438\u044f"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "\u0414\u0430\u0442\u0430"
+    }
+  },
+  "required": [
+    "client_name",
+    "amount",
+    "order_name",
+    "operation_name"
+  ]
+}
